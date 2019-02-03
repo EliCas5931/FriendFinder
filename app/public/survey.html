@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Find Your Bestie</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 </head>
+
 <body>
     <div class="container">
         <h1>Survey</h1>
-        <p>Please take this quick survey to find your bestest friend in the whole wide world! The answers will vary from 1 (Strongly Disagree) to 5 (Strongly Agree) </p>
+        <p>Please take this quick survey to find your bestest friend in the whole wide world! The answers will vary
+            from 1 (Strongly Disagree) to 5 (Strongly Agree) </p>
         <form>
             <div class="form">
                 <input id="name" type="text" class="form-control" placeholder="Name (Required)">
@@ -19,11 +23,130 @@
             </div>
 
             <div class="form">
-                <label for="Q1"></label>
+                <label for="Q1">Are you awesome?</label>
+                <select class="form-control" id="Q1">
+                    <option value="Empty">Select an Option</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+
+            <div class="form">
+                <label for="Q2">Are you trustworthy?</label>
+                <select class="form-control" id="Q2">
+                    <option value="Empty">Select an Option</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+
+            <div class="form">
+                <label for="Q3">Are you intelligent?</label>
+                <select class="form-control" id="Q3">
+                    <option value="Empty">Select an Option</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+
+            <div class="form">
+                <label for="Q4">Are you a control freak?</label>
+                <select class="form-control" id="Q4">
+                    <option value="Empty">Select an Option</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+
+            <div class="form">
+                <label for="Q5">Are you a good listener?</label>
+                <select class="form-control" id="Q5">
+                    <option value="Empty">Select an Option</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+
+            <div class="form">
+                <label for="Q6">Are you able to keep secrets?</label>
+                <select class="form-control" id="Q6">
+                    <option value="Empty">Select an Option</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+
+            <div class="form">
+                <label for="Q7">Are you fun to be around?</label>
+                <select class="form-control" id="Q7">
+                    <option value="Empty">Select an Option</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+
+            <div class="form">
+                <label for="Q8">Are you able to hold a conversation?</label>
+                <select class="form-control" id="Q8">
+                    <option value="Empty">Select an Option</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+
+            <div class="form">
+                <label for="Q9">Are you good with money?</label>
+                <select class="form-control" id="Q9">
+                    <option value="Empty">Select an Option</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+
+            <div class="form">
+                <label for="Q10">Are you in shape?</label>
+                <select class="form-control" id="Q10">
+                    <option value="Empty">Select an Option</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
             </div>
         </form>
-
+        <div class="text-center">
+            <button id="submitBtn" type="submit" class="btn btn-danger btn-lg">Submit Survey</button>
+        </div>
 
     </div>
 </body>
+
 </html>
